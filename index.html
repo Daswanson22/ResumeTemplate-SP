@@ -1,18 +1,21 @@
-<html>
+<html lang="en">
   <head>
-    <Title>Dylan's Resume Template</Title>
+    <Title>Dylan's Resume</Title>
+    <meta name="Description" content="A personal website to show companies my education, skills, projects, and much more. Here you will learn more about myself and my progress in the field of computer science.">
+    <meta http-equiv="author" content="Dylan Swanson">
+    <link href="css\style.css" type="text/css" rel="stylesheet"/>
   </head>
   <Header>
     <h1>Dylan Swanson</h1>
-    <a href="">Achievments</a>
-    <a href="">Education</a>
-    <a href="">Projects</a>
-    <a href="">Work Experience</a>
+    <a href="#Skills">Skills</a>
+    <a href="#Ed">Education</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Work">Work Experience</a>
   </Header>
   <body>
     
-    <div>
-      <h2>Education</h2>
+    <div class="Category">
+      <h2 id="Ed">Education</h2>
       <div>
         <h3><abbr title="California State University of Long Beach">CSULB</abbr></h3>
         <h4>GPA - 3.35</h4>
@@ -28,36 +31,35 @@
         <h3>Moorpark College</h3>
         <h4>August 2022 - Present</h4>
         <ul>
-          <li>Played college baseball for 3 years at Moorpark College where I learned what it means to be a leader, a contributor to something greater than myself, and the dedication it takes to work your way into an important role for the team. The game has taught me how to work with others at a high stress level and the usefulness of communication. </li>
           <li>Associates Degree in Computer Science, May 2022</li>
           <li>Associates Degree in Liberal Arts, May 2022</li>
           <li>Associates Degree in Natural Science and Mathematics, May 2022</li>
           <li>Associates Degree in History, July 2022</li>
+          <li>Played collegiate baseball for 3 years at Moorpark College where I learned what it means to be a leader, a contributor to something greater than myself, and the dedication it takes to work your way into an important role for the team. The game has taught me how to work with others at a high stress level and the usefulness of communication. 30-40 hours a week during the  40 game season. </li>
         </ul>
       </div>
     </div>
 
-    <div>
-      <h2>Skills</h2>
+    <div class="Category">
+      <h2 id="Skills">Skills</h2>
       <p>
         <h4>Languages: Python, C++, SQL, HTML5, CSS3, Python with Tkinter</h4>
         <h4>Technologies: Github Desktop, Visual Studio Code, Visual Studio 2019, Pycharm, Microsoft Word, Excel, Outlook, Office</h4>
       </p>
     </div>
-
-    <h2>Projects</h2>
-    <div>
-      <h3>Project Finance</h3>
-      <ul>
-        <li>Implementation of the python GUI framework Tkinter.</li>
-        <li>Linked SQL database to save past transactions.</li>
-        <li>Architected using Object Oriented methodology.</li>
-        <li>This project was created in inspiration to keep better track of where my money is going. I have found it hard to keep track of my finances while working multiple hourly jobs. With this I will have a more modern and neat representation of where my money is going.</li>
-      </ul>
+    <div class="Category">
+        <h2 id="Projects">Projects</h2>
+        <h3>Project Finance</h3>
+        <ul>
+          <li>Implementation of the python GUI framework Tkinter.</li>
+          <li>Linked SQL database to save past transactions.</li>
+          <li>Architected using Object Oriented methodology.</li>
+          <li>This project was created in inspiration to keep better track of where my money is going. I have found it hard to keep track of my finances while working multiple hourly jobs. With this I will have a more modern and neat representation of where my money is going.</li>
+        </ul>
     </div>
 
-    <h2>Work Experience</h2>
-    <div>
+    <div class="Category">
+      <h2 id="Work">Work Experience</h2>
       <h3>Finney's Crafthouse</h3>
       <h4>April 2022 - Present</h4>
       <h4>Bartender</h4>
@@ -70,7 +72,7 @@
       </ul>
     </div>
 
-    <div>
+    <div class="Category">
       <h3>Yarrow YMCA</h3>
       <h4>Aug 2021 - Aug 2022</h4>
       <h4>Fitness Attendant</h4>
@@ -80,11 +82,14 @@
         <li>Organize gym weights and sanitize machines.</li>
       </ul>
     </div>
+
   </body>
 
   <footer>
-    <a href=""><i class="fa-brands fa-instagram">Instagram</i></a>
+    <a href="https://www.instagram.com/daswanson22/"><i class="fa-brands fa-instagram">Instagram</i></a>
+    <a href="https://github.com/Daswanson22"><i class="fa-brands fa-github">Github</i></a>
     <a href="https://www.linkedin.com/in/dylan-swanson-018223211/"><i class="fa-brands fa-linkedin">LinkedIn</i></a>
     <a href="mailto:Daswanson22@gmail.com"><i class="fa-regular fa-envelope">Email</i></a>
+    <p>&copy; 2022-2023 Dylan Swanson</p>
   </footer>
 </html>
