@@ -3,47 +3,95 @@
     <Title>Dylan's Resume</Title>
     <meta name="Description" content="A personal website to show companies my education, skills, projects, and much more. Here you will learn more about myself and my progress in the field of computer science.">
     <meta http-equiv="author" content="Dylan Swanson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="css\style.css" type="text/css" rel="stylesheet"/>
     <link href="css\sytleLayout.css" type="text/css" rel="stylesheet"/>
   </head>
   <Header>
-    <h1 class="h1-header">Dylan Swanson</h1>
-    <a href="#Skills" class="Topic 2">Skills</a>
-    <a href="#Ed" class="Topic">Education</a>
-    <a href="#Projects" class="Topic">Projects</a>
-    <a href="#Work" class="Topic 2">Work Experience</a>
+    <div class="container-head">
+      <h1 class="h1-header">Hi, I'm Dylan Swanson</h1>
+      <div class="container-head-links">
+        <button onclick="window.location.href='#Work';">About Me</button>
+        <button onclick="window.location.href='#Ed';">Education</button>
+        <button onclick="window.location.href='#Skills';">Skills</button>
+        <button onclick="window.location.href='#Projects';">Projects</button>
+        <button onclick="window.location.href='#Work';">Work</button>
+        <button onclick="window.location.href='#Work';">Contact</button>
+
+        <!-- <a href="#Skills" class="Topic 2">Skills</a>
+        <a href="#Ed" class="Topic">Education</a>
+        <a href="#Projects" class="Topic">Projects</a>
+        <a href="#Work" class="Topic 2">Work Experience</a> -->
+      </div>
+    </div>
+    
   </Header>
   <body>
     
     <div class="Category">
-      <h2 id="Ed">Education</h2>
-      <div class="Ed-Body">
-        <h3><abbr title="California State University of Long Beach">California State University of Long Beach</abbr></h3>
-        <h4>GPA - 3.35</h4>
-        <h4>August 2022 - Present</h4>
-        <ul>
-          <li>Pursuing Bachelors of Science in Computer Science</li>
-          <li><b>Courses:</b> OOP in C++ and Python, Data Structures, Tech Ethics</li>
-          <li>Recipient of the <i>SME Education Foundation Scholarship 2021-2022</i></li>
-          <ul><li>SME is an internationally recognized nonprofit organization serving the manufacturing industry, the SME Education Foundation inspires, prepares and supports the next generation of manufacturing and engineering talent. In order to be awarded this scholarship I had to write a 1,250 word essay based on a topic of that was provided. The candidates were picked based on how high their GPA was and well their essay was written. </li></ul>
-        </ul>
+      <div>
+        <em>
+          <h2 id="Ed">Education</h2>
+        </em>
+          
+          <dl>
+            <dt>Relavent Links</dt>
+            <dd><a href="https://www.csulb.edu/college-of-engineering/computer-engineering-computer-science">About CSULB CS</a></dd>
+            <dd><a href="https://www.moorparkcollege.edu/departments/academic/computer-science">About MC CS</a></dd>
+            <dd><a href="https://www.collegefactual.com/colleges/california-state-university-long-beach/academic-life/academic-majors/computer-information-sciences/computer-science/">CSULB Computer Science Ranking</a></dd>
+          </dl>
+
       </div>
-      <div class=""Ed-BodyS>
-        <h3>Moorpark College</h3>
-        <h4>August 2022 - Present</h4>
-        <ul>
-          <li>Associates Degree in Computer Science, May 2022</li>
-          <li>Associates Degree in Liberal Arts, May 2022</li>
-          <li>Associates Degree in Natural Science and Mathematics, May 2022</li>
-          <li>Associates Degree in History, July 2022</li>
-          <li>Played collegiate baseball for 3 years at Moorpark College where I learned what it means to be a leader, a contributor to something greater than myself, and the dedication it takes to work your way into an important role for the team. The game has taught me how to work with others at a high stress level and the usefulness of communication. 30-40 hours a week during the  40 game season. </li>
-        </ul>
+      
+      <div class="container-education">
+        <div class="container-info">
+          <h3 id="topic-title">California State University of Long Beach</h3>
+          <div class="container-h4">
+            <h4>GPA - 3.35</h4>
+            <h4>Expected to Graduate Spring 2024</h4>
+          </div>
+  
+          <div class="list-left-border">
+            <ul>
+              <li>Pursuing Bachelors of Science in Computer Science</li>
+              <li>Courses: OOP in C++ and Python, Data Structures, Tech Ethics</li>
+              <li>Clubs: ACM, CSULB Cybersecurity Club, Video Game Develoment Association</li>
+            </ul>
+          </div> 
+        </div>
+
+        <div class="container-info">
+          <h3 id="topic-title">Moorpark College</h3>
+  
+          <div class="container-h4">
+            <h4>GPA - 3.35</h4>
+            <h4>June 2019 - May 2022</h4>
+          </div>
+  
+          <div class="list-left-border">
+            <ul>
+              <li>Associates Degree in Computer Science, May 2022</li>
+              <li>Associates Degree in Liberal Arts, May 2022</li>
+              <li>Associates Degree in Natural Science and Mathematics, May 2022</li>
+              <li>Associates Degree in History, July 2022</li>
+              <li>Played collegiate baseball for 3 years at Moorpark College where I learned what it means to be a leader, a contributor to something greater than myself, and the dedication it takes to work your way into an important role for the team. The game has taught me how to work with others at a high stress level and the usefulness of communication. 30-40 hours a week during the  40 game season. </li>
+              <li>Recipient of the <i>SME Education Foundation Scholarship 2021-2022</i></li>
+              <li>SME is an internationally recognized nonprofit organization serving the manufacturing industry, the SME Education Foundation inspires, prepares and supports the next generation of manufacturing and engineering talent. In order to be awarded this scholarship I had to write a 1,250 word essay based on a topic of that was provided. The candidates were picked based on how high their GPA was and well their essay was written. </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
+        
     </div>
 
     <div class="Category">
-      <h2 id="Skills">Skills</h2>
-      <div class="p-skills">
+      <em>
+        <h2 id="Skills">Skills</h2>
+      </em>
+      <div class="container-skills">
+
         <div>
           <ul class="skill-list">
             <li><h3 class="skill-category">Languages</h3></li>
@@ -56,6 +104,7 @@
             <li>Javascript</li>
           </ul>
         </div>
+
         <div>
           <ul class="skill-list">
             <li><h3 class="skill-category">Technologies</h3></li>
@@ -69,30 +118,44 @@
         
       </div>
     </div>
+
+    <!-- Projects -->
     <div class="Category">
+      <em>
         <h2 id="Projects">Projects</h2>
-        <div class="p-skills">
-          <div class="skill-list projects-pad">
-            <ul>
-              <li><h3 class="skill-category ">Project Finance</h3></li>
-              <li>This project was created in inspiration to keep better track of where my money is going. I have found it hard to keep track of my finances while working multiple hourly jobs. With this I will have a more modern and neat representation of where my money is going.</li>
-              <li>Implementation of the python GUI framework Tkinter.</li>
-              <li>Linked SQL database to save past transactions.</li>
-              <li>Architected using Object Oriented methodology.</li>
-            </ul>
-          </div>
-          
-          <div class="github-logo-div projects-pad">
-            <a href="https://www.freeiconspng.com/img/16158" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/github-logo-icon-5.png" width="350" alt="Icons Windows Github Logo For" /></a>
-          </div>
+      </em>
+      <div class="container-projects">
+
+        <div class="skill-list">
+
+          <ul>
+            <li><h3 class="skill-category ">Project Finance</h3></li>
+            <li>This project was created in inspiration to keep better track of where my money is going. I have found it hard to keep track of my finances while working multiple hourly jobs. With this I will have a more modern and neat representation of where my money is going.</li>
+            <li>Implementation of the python GUI framework Tkinter.</li>
+            <li>Linked SQL database to save past transactions.</li>
+            <li>Architected using Object Oriented methodology.</li>
+          </ul>
+
         </div>
+        
+        <div class="github-logo-div">
+          <a href="https://github.com/Daswanson22/Project-Finance" title="Image from github.com"><img src="images/GitHub-Mark-120px-plus.png" width="350" alt="Icon/Link Github Logo" class="github-img"/></a>
+        </div>
+
+      </div>
     </div>
 
     <div class="Category">
-      <h2 id="Work">Work Experience</h2>
-      <h3>Finney's Crafthouse</h3>
-      <h4>April 2022 - Present</h4>
-      <h4>Bartender</h4>
+      <em>
+        <h2 id="Work">Work Experience</h2>
+      </em>
+      <h3 id="topic-title">Finney's Crafthouse</h3>
+
+      <div class="container-h4">
+        <h4>Position - Bartender</h4>
+        <h4>April 2022 - Present</h4>
+      </div>
+      
       <ul>
         <li><b>Employee of the month for August 2022</b></li>
         <li>Utilized team members to ensure that the bar is working efficiently.</li>
@@ -101,9 +164,12 @@
         <li>Tasked to train new employee's for the barback, drink runner and bartender position.</li>
       </ul>
     
-      <h3>Yarrow YMCA</h3>
-      <h4>Aug 2021 - Aug 2022</h4>
-      <h4>Fitness Attendant</h4>
+      <h3 id="topic-title">Yarrow YMCA</h3>
+      <div class="container-h4">
+        <h4>Aug 2021 - Aug 2022</h4>
+        <h4>Fitness Attendant</h4>
+      </div>
+      
       <ul>
         <li>Engage with members and ensure that they have everything they need.</li>
         <li>Collaborate with team members and trainers to plan, set up and run the classes during the day.</li>

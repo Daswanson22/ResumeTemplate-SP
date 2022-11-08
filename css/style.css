@@ -1,6 +1,7 @@
 * {
   margin: 10px;
   padding: 0px;
+  color: black;
 }
 
 body {
@@ -8,29 +9,120 @@ body {
   font-size: 16px;
 
 }
-header {
+/* ---- Header Section ----*/
+Header {
   text-align: center;
+  margin-bottom: 80px;
 }
+.h1-header {
+  font-size: 48px;
+  font-family: Garamond, Arial, Helvetica;
+  letter-spacing: 8px;
+  color: black;
+  text-shadow:2px 2px 10px orange;
+}
+.container-head {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 10px solid black;
+
+}
+.container-head-links {
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 0px;
+}
+.container-head-links button{
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-align: center;
+  color: rgb(6, 99, 157);
+  background-color: white;
+  border: 1px solid rgba(0, 77, 158, 0.25);
+  height: fit-content;
+  padding: 10px;
+}
+button:hover {
+  background: #30e5dc;
+  box-shadow: 0 0 5px #30e5dc, 0 0 25px #30e5dc, 0 0 50px #30e5dc, 0 0 200px #30e5dc;
+}
+/* ---- End of Header Section ---- */
+
 h1, h2, p{
   text-align: left-justify;
 }
 h1{
   font-size: 32px;
-}
+}  
 
 h2 {
-  font-size: 24px;
-  margin-bottom: 2%
+  border-top: 2px solid orange;
+  border-bottom: 2px solid orange;
+  letter-spacing: 4px;
+  text-align: center;
+  width: 10em;
 }
-
 h3 {
-  background-color: rgb(0,0,0, 50%);
+  background-color: #30e5dc23;;
+  color: #30e5dce9;
+  border-radius: 3px;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 20px;
+  padding: 10px;
 }
 h4 {
   background-color: rgba(29, 28, 28);
+  color: white;
+  
 }
-h1 , h2, h3, h4, p{
-  color: rgb(109, 65, 211);
+
+/* ---- Education Section ---- */
+.container-education {
+  width: 50%;
+  height: 100%;
+  display: flex; 
+  flex-direction: column; 
+}
+.container-info {
+  padding: 10px 0px;
+  margin: 5px;
+  background-color: #1F3541;
+  border-radius: 15px;
+}
+.list-left-border {
+  border-left: 2px solid #30e5dce9;;
+}
+.container-h4 h4 {
+  width: auto;
+  height: 25%;
+
+  border-radius: 25px;
+  border: 2px solid sandybrown;
+}
+.container-h4 {
+  width:fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+dl {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px;
+}
+dt {
+  background-color: #1F3541;
+  color: white;
+  padding: 10px;
+}
+
+
+/* ---- End of Education Section ---- */
+
+h1 , h2, h4, p{
   margin-left: 15px;
   padding: 10px 10px;
 }
@@ -40,6 +132,8 @@ p {
 a {
   color: rgb(62, 74, 238);
   text-decoration:none;
+  margin: 0px;
+  padding: 0px;
 }
 a:hover {
   color: rgb(122, 5, 177);
@@ -54,42 +148,56 @@ a:active{
 }
 
 li {
-  color: rgb(109, 65, 211);
+  color: #EDF2F3;
   list-style-type: none;
 }
 img {
   border: 5px solid rgb(14, 194, 104);
   border-radius: 15%;
   height: 200px;
-  width: 200px;
+  max-width: 100%;
+  display: block;
 }
 b {
   color: rgb(14, 194, 104)
 }
-.github-logo-div {
-  display: inline-block;
+i {
+  color: #30e5dc;
 }
-.projects-pad {
-  margin: 10px 50px;
-}
-.p-skills {
+.container-skills {
+  border: 2px solid red;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .skill-category {
   border-bottom: 2px solid black;
-  margin-bottom: 8%;
+  margin-bottom: 5%;
   text-align: center;
 }
-
 .skill-list {
   list-style-type: none;
   width: 28em;
-  
+  height: fit-content;
   text-align: center;
   animation-name: fade-up;
   animation-duration: 2s;
+  border: 2px solid lime;
+
+}
+.container-projects{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.github-logo-div {
+  width: 125px;
+  height: 125px;
+  
+}
+.github-img {
+  width: 100%;
+  height: 100%;
 }
 
 .Resume-Body {
@@ -97,20 +205,14 @@ b {
   background-color: rgb(250,110,0);
 }
 .category {
-  border: 2px solid rgb(109, 65, 211);
-  background-color: rgba(29, 28, 28);
-    
   max-width: 100%;
   min-width: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-}
-.h1-header {
-  font-size: 38px;
-  font-weight: bolder;
-  font-family: arial black, Arial, Helvetica;
-  letter-spacing: 8px;
-  color: rgb(32, 161, 123);
-}
 .topic {
   color: rgb(8, 90, 60);
   letter-spacing: 10px;
