@@ -4,32 +4,202 @@
     <meta name="Description" content="A personal website to show companies my education, skills, projects, and much more. Here you will learn more about myself and my progress in the field of computer science.">
     <meta http-equiv="author" content="Dylan Swanson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link href="css\style.css" type="text/css" rel="stylesheet"/>
-    <link href="css\sytleLayout.css" type="text/css" rel="stylesheet"/>
-  </head>
-  <Header>
-    <div class="container-head">
-      <h1 class="h1-header">Hi, I'm Dylan Swanson</h1>
-      <div class="container-head-links">
-        <button onclick="window.location.href='#Work';">About Me</button>
-        <button onclick="window.location.href='#Ed';">Education</button>
-        <button onclick="window.location.href='#Skills';">Skills</button>
-        <button onclick="window.location.href='#Projects';">Projects</button>
-        <button onclick="window.location.href='#Work';">Work</button>
-        <button onclick="window.location.href='#Work';">Contact</button>
 
-        <!-- <a href="#Skills" class="Topic 2">Skills</a>
-        <a href="#Ed" class="Topic">Education</a>
-        <a href="#Projects" class="Topic">Projects</a>
-        <a href="#Work" class="Topic 2">Work Experience</a> -->
+  </head>
+    
+    
+  <body>
+    <!-- Navigation Bar (Every Screen) -->
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container bg-nav-custom pb-2 d-lg-flex flex-lg-column">
+          <a href="#" class="navbar-brand custom-title-nav">Hello, I'm Dylan Swanson</a>
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navDropdown" aria-expanded="true"
+          aria-controls="nav" aria-label="Expand Navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex-md flex-row-reverse justify-content-between" id="navDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link active" aria-current="page">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link" aria-current="page">Education</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link" aria-current="page">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link" aria-current="page">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link" aria-current="page">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">Contact</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- About  -->
+  <div class="container">
+    <div class="row custom-row-bg px-2 py-4">
+      <div class="col-md-6">
+          <img src="images/IMG_0127.jpeg" alt="Image of myself" class="img-fluid custom-img">
+      </div>
+      <div class="col-md-6">
+          <h3>About Me...</h3>
+          <p class="text-light fs-5">
+            Hello! I am an prosperous computer science student currently enrolled
+            at California State University Long Beach. My passion for computer 
+            science and programming is driven from the creative freedom that it 
+            allows. I find it intriguing to be able to create everything and anything.
+            I am always looking to work on a new project and to develop a new skill. 
+            When I'm not programming you can find me all across california doing long 
+            distance cycling, playing basketball or playing video games with my friends. 
+          </p>
+          <div class="container d-flex justify-content-evenly">
+            <a href="https://www.instagram.com/daswanson22/"><i class="fa fa-instagram" style="font-size:46px" alt="instagram icon"></i></a>
+            <a href="https://github.com/Daswanson22?tab=repositories"><i class="fa fa-github" style="font-size:46px" alt="github icon"></i></a>
+            <a href="https://www.linkedin.com/in/dylan-swanson-018223211/"><i class="fa fa-linkedin-square" style="font-size:46px" alt="linkedin icon"></i></a>
+            <a href="mailto:daswanson22@gmail.com"><i class="fa fa-envelope" style="font-size:46px" alt="email icon"></i></a>
+          </div>
       </div>
     </div>
-    
-  </Header>
-  <body>
-    
-    <div class="Category">
+  </div>
+
+  <!-- Education -->
+  <div class="container mt-4">
+    <div class="row">
+
+      <div class="col-md-2 col-sm-12">
+        <h2 class="text-center custom-category-h2 fs-3" id="">Education</h2>
+      </div>
+
+      <div class="col-md-8">
+        <!-- Cal State Long Beach Card -->
+        <div class="card w-100 custom-card-style" style="width: 18rem;">
+          <div class="card-body">
+
+            <h5 class="card-title fs-2 custom-card-title p-2 ml-3">California State University Long Beach</h5>
+
+            <div class="d-flex justify-content-between py-2" style="width: fit-content;">
+              <h4 class="custom-h4-items-ed fs-6">GPA - 3.35</h4>
+              <h4 class="custom-h4-items-ed fs-6">Junior</h4>
+              <h4 class="custom-h4-items-ed fs-6">Bachelors of Science - Computer Science</h4>
+              <h4 class="custom-h4-items-ed fs-6">Aug 2022 - Present</h4>
+            </div>
+            <h5 class="fs-4 custom-subtitle p-2">Relavent Courses</h5>
+            <div class="d-flex justify-content-center flex-wrap py-2" style="width: fit-content; height: fit-content">
+              <h4 class="custom-h4-items-ed fs-6">Advanced Python Programmng</h4>
+              <h4 class="custom-h4-items-ed fs-6">Tech Ethics</h4>
+              <h4 class="custom-h4-items-ed fs-6">Data Structures</h4>
+              <h4 class="custom-h4-items-ed fs-6">Discrete Mathematics II</h4>
+              <h4 class="custom-h4-items-ed fs-6">Algorithms (<i>Spring 2023</i>)</h4>
+              <h4 class="custom-h4-items-ed fs-6">System Programming (<i>Spring 2023</i>)</h4>
+              <h4 class="custom-h4-items-ed fs-6">Software Engineering (<i>Spring 2023</i>)</h4>
+              <h4 class="custom-h4-items-ed fs-6">Statistics and Probability (<i>Spring 2023</i>)</h4>
+              <h4 class="custom-h4-items-ed fs-6">Computer Architect Organization (<i>Spring 2023</i>)</h4>
+            </div>
+            <h5 class="fs-4 custom-subtitle p-2">Clubs</h5>
+            <div class="d-flex justify-content-center flex-wrap py-3" style="width: fit-content; height: fit-content">
+              <h4 class="custom-h4-items-ed fs-6">CSULB Cybersecurity Club</h4>
+              <h4 class="custom-h4-items-ed fs-6">Video Game Developers Association</h4>
+              <h4 class="custom-h4-items-ed fs-6">CSULB Chess Club</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-12">
+        <h3 class="text-center custom-rlinks-h3 mt-2 pb-1 fs-3">Relavent</h3>
+        <ul class="py-1">
+          <li class="py-1"><a href="https://www.csulb.edu/college-of-engineering/computer-engineering-computer-science" class="link-dark">CSULB Computer Science Degree Ranking</a></li>
+          <li class="py-1"><a href="https://www.moorparkcollege.edu/departments/academic/computer-science" class="link-dark">About Moorpark College Computer Science Program</a></li>
+          <li class="py-1"><a href="https://www.csulb.edu/college-of-engineering/computer-engineering-computer-science" class="link-dark">About CSULB Computer Science Program</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+
+      <div class="col-md-2 col-sm-12">
+      </div>
+
+      <div class="col-md-8">
+        <!-- Moorpark College Card -->
+        <div class="card w-100 custom-card-style" style="width: 18rem;">
+          <div class="card-body">
+
+            <h5 class="card-title fs-2 custom-card-title p-2 ml-3">Moorpark College</h5>
+
+            <div class="d-flex justify-content-between py-2" style="width: fit-content;">
+              <h4 class="custom-h4-items-ed fs-6">GPA - 3.35</h4>
+              <h4 class="custom-h4-items-ed fs-6">Aug 2019 - May 2022</h4>
+            </div>
+            <h5 class="fs-4 custom-subtitle p-2">Associates Degrees</h5>
+            <div class="d-flex justify-content-center flex-wrap py-2" style="width: fit-content; height: fit-content">
+              <h4 class="custom-h4-items-ed fs-6">Computer Science</h4>
+              <h4 class="custom-h4-items-ed fs-6">Natural Sciences and Mathematics</h4>
+              <h4 class="custom-h4-items-ed fs-6">Liberal Arts</h4>
+              <h4 class="custom-h4-items-ed fs-6">History</h4>
+            </div>
+
+            <h5 class="fs-4 custom-subtitle p-2">Activities</h5>
+            <div class="d-flex justify-content-center flex-wrap py-2" style="width: fit-content; height: fit-content">
+              <p class="custom-h4-items-ed fs-6 text-light">
+                While attending school I participated in college athletics for 3 years.
+                My main sport was baseball which consumed 15-30 hours a week depending on 
+                the season that we were in. Some things I learned about myself while playing 
+                the sport was how to perservere, work your way into a leadership role and 
+                contribute to something greater than yourself.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Skills -->
+  <div class="container mt-4">
+    <div class="row ">
+      <div class="col-md-2 col-sm-12">
+        <h2 class="text-center custom-category-h2 fs-3" id="">Skills</h2>
+      </div>
+    <div class="col-md-8 custom-row-bg">
+      <ul class="list-group text-center my-3 custom-full-list-style">
+        <li class="list-group-item custom-list-title fs-4">Technical</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">Python</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">C++</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">HTML</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">CSS</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">Javascript</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">Bootstrap</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">TKinter</li>
+
+      </ul>
+      <ul class="list-group text-center mb-3 custom-full-list-style">
+        <li class="list-group-item custom-list-title fs-4">Soft</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">Leadership</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">Determined</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">Teamwork</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">Verbal and Written Communication</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">Open-Minded</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">Organized</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">Ability to work independently</li>
+        <li class="list-group-item list-group-item-dark custom-list-item">Flexible</li>
+
+      </ul>
+    </div>
+    </div>
+  </div>
+  </div>
+
+    <!-- <div class="Category">
       <div>
         <em>
           <h2 id="Ed">Education</h2>
@@ -39,7 +209,7 @@
             <dt>Relavent Links</dt>
             <dd><a href="https://www.csulb.edu/college-of-engineering/computer-engineering-computer-science">About CSULB CS</a></dd>
             <dd><a href="https://www.moorparkcollege.edu/departments/academic/computer-science">About MC CS</a></dd>
-            <dd><a href="https://www.collegefactual.com/colleges/california-state-university-long-beach/academic-life/academic-majors/computer-information-sciences/computer-science/">CSULB Computer Science Ranking</a></dd>
+            <dd><a href="https://computer-science-schools.com/california">CSULB Computer Science Ranking</a></dd>
           </dl>
 
       </div>
@@ -119,7 +289,6 @@
       </div>
     </div>
 
-    <!-- Projects -->
     <div class="Category">
       <em>
         <h2 id="Projects">Projects</h2>
@@ -175,15 +344,15 @@
         <li>Collaborate with team members and trainers to plan, set up and run the classes during the day.</li>
         <li>Organize gym weights and sanitize machines.</li>
       </ul>
-    </div>
+    </div> -->
 
   </body>
 
-  <footer>
+  <!-- <footer>
     <a href="https://www.instagram.com/daswanson22/"><i id="foot">Instagram</i></a>
     <a href="https://github.com/Daswanson22"><i id="foot">Github</i></a>
     <a href="https://www.linkedin.com/in/dylan-swanson-018223211/"><i id="foot">LinkedIn</i></a>
     <a href="mailto:Daswanson22@gmail.com"><i id="foot">Email</i></a>
     <p id="foot pfoot" >&copy; 2022-2023 Dylan Swanson</p>
-  </footer>
+  </footer> -->
 </html>

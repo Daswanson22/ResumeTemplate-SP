@@ -1,34 +1,87 @@
 * {
-  margin: 10px;
+  margin: 0px;
   padding: 0px;
   color: black;
 }
 
 body {
   font-family: Georgia, Times, sans-seriff;
-  font-size: 16px;
+}
+/* ---- NAV Section ----*/
+.bg-nav-custom {
+  border-bottom: 1px solid rgb(6, 99, 157);
+}
+.custom-title-nav {
+  font-size: 32px;
+}
+/* ---- About Me ---- */
+.custom-row-bg {
+  background-color: #1F3541;
+  border-radius: 3px;
+}
+.custom-img {
+  border: 2px solid orange;
+  box-shadow: 0 0 10px 1px orange;
+}
+/* -- End of About Me -- */
+.custom-h4-items-ed{
+  background-color: black;
+  border: 2px solid orange;
+  border-radius: 25px;
+}
 
+.custom-card-style {
+  background-color: #1F3541;
 }
-/* ---- Header Section ----*/
-Header {
-  text-align: center;
-  margin-bottom: 80px;
+
+.custom-category-h2{
+  border-top: 2px solid orange;
+  border-bottom: 2px solid orange;
+  letter-spacing: 4px;
 }
-.h1-header {
-  font-size: 48px;
-  font-family: Garamond, Arial, Helvetica;
-  letter-spacing: 8px;
+
+.custom-rlinks-h3 {
   color: black;
-  text-shadow:2px 2px 10px orange;
+  border-bottom: 2px solid black; 
+  letter-spacing: 4px;
+  background-color: transparent;
 }
-.container-head {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  border-bottom: 10px solid black;
+
+.custom-card-title {
+  background-color: #30e5dc23;
+  color: #30e5dce9; 
+  border-radius: 3px;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.custom-subtitle {
+  border-bottom: 2px solid #30e5dce9;
+  background-color: #30e5dc23;
+  color: #30e5dce9;
+  text-shadow: 1px 1px 1px black;
+  width: fit-content;
+  margin-left: 20px;
+}
+/* ---- Skills ---- */
+.custom-full-list-style {
+  border: 2px solid orange;
 
 }
-.container-head-links {
+.custom-list-title {
+  background-color: transparent;
+  color: orange;
+  border-bottom: 2px solid orange; 
+
+}
+.custom-list-item {
+}
+
+/* -- End of Skills -- */
+
+/* .container-head-links {
   flex-direction: row;
   justify-content: space-evenly;
   margin-bottom: 0px;
@@ -46,8 +99,8 @@ Header {
 button:hover {
   background: #30e5dc;
   box-shadow: 0 0 5px #30e5dc, 0 0 25px #30e5dc, 0 0 50px #30e5dc, 0 0 200px #30e5dc;
-}
-/* ---- End of Header Section ---- */
+} */
+/* ---- End of NAV Section ---- */
 
 h1, h2, p{
   text-align: left-justify;
@@ -56,14 +109,8 @@ h1{
   font-size: 32px;
 }  
 
-h2 {
-  border-top: 2px solid orange;
-  border-bottom: 2px solid orange;
-  letter-spacing: 4px;
-  text-align: center;
-  width: 10em;
-}
-h3 {
+
+/* h3 {
   background-color: #30e5dc23;;
   color: #30e5dce9;
   border-radius: 3px;
@@ -71,7 +118,7 @@ h3 {
   height: fit-content;
   margin-left: 20px;
   padding: 10px;
-}
+} */
 h4 {
   background-color: rgba(29, 28, 28);
   color: white;
@@ -79,7 +126,7 @@ h4 {
 }
 
 /* ---- Education Section ---- */
-.container-education {
+/* .container-education {
   width: 50%;
   height: 100%;
   display: flex; 
@@ -94,19 +141,7 @@ h4 {
 .list-left-border {
   border-left: 2px solid #30e5dce9;;
 }
-.container-h4 h4 {
-  width: auto;
-  height: 25%;
 
-  border-radius: 25px;
-  border: 2px solid sandybrown;
-}
-.container-h4 {
-  width:fit-content;
-  height: fit-content;
-  display: flex;
-  justify-content: space-between;
-}
 dl {
   display: flex;
   flex-direction: column;
@@ -117,7 +152,7 @@ dt {
   background-color: #1F3541;
   color: white;
   padding: 10px;
-}
+} */
 
 
 /* ---- End of Education Section ---- */
@@ -130,7 +165,7 @@ p {
   color:#665544;
 }
 a {
-  color: rgb(62, 74, 238);
+  color: #30e5dce9;
   text-decoration:none;
   margin: 0px;
   padding: 0px;
@@ -147,24 +182,13 @@ a:active{
   color: rgb(62, 74, 238)
 }
 
-li {
-  color: #EDF2F3;
-  list-style-type: none;
-}
-img {
-  border: 5px solid rgb(14, 194, 104);
-  border-radius: 15%;
-  height: 200px;
-  max-width: 100%;
-  display: block;
-}
 b {
   color: rgb(14, 194, 104)
 }
 i {
   color: #30e5dc;
 }
-.container-skills {
+/* .container-skills {
   border: 2px solid red;
   display: flex;
   flex-direction: row;
@@ -229,4 +253,4 @@ i {
   to {
     transform: translateY(0%);
   }
-}
+} */
